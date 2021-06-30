@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(90deg, #0D0D0D, #404040);
+}
+.container{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App{
+  background: #0D0D0D;
+  color: #FFFFFF;
+  padding: 35px;
+  border-radius: 10px;
+  margin: 50px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #0D0D0D, #404040);
+  color: #D9D9D9;
+  width: 100%;
+  padding: 5px;
+}
+nav a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #D9D9D9;
+  margin-left: 20px;
+}
+.hooks button{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+nav h1 {
+  font-family: sans-serif;
+  padding: 10px;
+  color: #869AA6;
+}
+.pags{
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.pags article{
+  position: absolute;
+  background: #000;
+  padding: 5px;
+  border-radius: 15px;
+}
