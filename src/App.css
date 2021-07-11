@@ -33,6 +33,9 @@ nav a {
   color: #D9D9D9;
   margin-left: 20px;
 }
+.links-show {
+  position: absolute;
+}
 .hooks button{
   padding: 5px;
   margin: 5px;

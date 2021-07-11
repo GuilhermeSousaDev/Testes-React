@@ -13,12 +13,14 @@ import Pag from './componente/pag1'
 import Pag2 from './componente/pag2'
 import Children from './componente/children' 
 import Search from './componente/search'
+import Gitapi from './componente/gitapi'
 import {themeContext} from './componente/context'
+import DeputadoInfo from './componente/deputadoInfo';
 
 export default function App(){
-  const {background,color} = useContext(themeContext)
+  const {light,dark} = useContext(themeContext)
   return (   
-    <themeContext.Provider value={{background,color}}>
+    <themeContext.Provider value={{light,dark}}>
     <Router>
      <Navbar/>
     <div className="App"> 
@@ -36,6 +38,8 @@ export default function App(){
       <Route path="/pag1"><Pag /></Route>   
       <Route path="/pag2"><Pag2/></Route>
       <Route path="/search"><Search /></Route>
+      <Route path="/deputados"><Gitapi/></Route>
+      <Route path="/deputado/:id"><DeputadoInfo/></Route>
       </Switch> 
      </div>
      </Router>

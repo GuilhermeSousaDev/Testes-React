@@ -9,9 +9,11 @@ function Servicos(){
         const val2 = parseFloat(inp2.current.value) 
         setRes(val1 * val2)
     }
+    const handleMouseMove = e => {
+        console.log(e.clientX)
+    }
     return(
-    <div>
-       
+    <div onMouseMove={handleMouseMove}>  
         <button >Valor</button>
         <input type="text" ref={inp1}/>
         <input type="text" ref={inp2}/>

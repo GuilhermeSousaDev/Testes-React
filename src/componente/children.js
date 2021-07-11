@@ -1,4 +1,4 @@
-import React,{useContext, useReducer} from 'react';
+import React,{useContext, useReducer, useState} from 'react';
 import {themeContext} from './context';
 
 function Children(){
@@ -15,9 +15,9 @@ function Children(){
       }
     }
     const [state,dispatch] = useReducer(reducer,{count:0})
-    const {background,color} = useContext(themeContext)
+    const {light,dark} = useContext(themeContext)
     return(  
-        <div style={{background:background,color:color,padding:'20px'}}>
+        <div style={{background:light.background,color:light.color,padding:'20px'}}>
           <h1> Children dentro do Home</h1>  
           <p>Paragrafo Ilustrativo</p>
         <button onClick={() => dispatch({type:'increment'})}>Mais</button>
